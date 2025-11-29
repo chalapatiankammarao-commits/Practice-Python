@@ -10,6 +10,7 @@ a = [1,2,3,4,5,6]
 # Call the function once so it prints
 
 
+
 f = ["orange", "banana", "cherry"]
 #print(f)
 
@@ -106,15 +107,25 @@ x, y, z = "orange", "banana", "cherry"
   #myfunc()
   #print("python is " + x)
 
-
 x = "Phani"
 
 def my_func():
-  global x
   x = "Srikanth"
   print ("name is " + x)
-  my_func()
+my_func()
   
 print("name is " + x)
+
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
   
 
