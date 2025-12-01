@@ -1,25 +1,52 @@
+#python operators
+x = 10 + 5
+y = x + 20
+z = y + 50
+print(x, y, z)
+
+#arthmetic operataors
+x = 4
+y = 5 
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x % y)
+print(x ** y)
+print(x // y)
+
+#assigment operators
+a = 5
+a += 6
+print(a)
+
+#comparison
+x = 5
+y = 7
+print(x == y)
+print(x != y)
+print(x < y)
+print(x > y)
+print(x <= y)
+print(x >= y)    
+
+#chaining comparison operators
 x = 7
-y = 5
-######print(x<=y)
-#y =24
-#print(x+y)
-#(x-y)
-#print(x*y)
-#print(y/x)
-#print(y%x)
-#print(x**2)
-#print(x//2)
+print(3 < x < 10)
+print(3 < x or x >10)
+
+#iedntity operators
+x = ["banana", "apple", "mangoo"]
+y = ["banana", "apple", "mangoo"]
+print(x is not y)
+
+#membership operators
+x = ["employee", "employeeId", "customer", "customerId"]
+print("customer" in x)
+
+#membership strings
+x = "hello world"
+print("h" in x)
 
 
-a = [20, 30, 40]
-a = [10, 50, 60]
-#a = b
-print (a is a)
-#print (a is not b)
 
-
-fruits = ["apple", "banana", "cherry"]
-if "orange" in fruits:
-  print("Yes, orange is in the fruits list")
-else:
-    print("No, orange is not in the fruits list")
