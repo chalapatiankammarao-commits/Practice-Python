@@ -110,6 +110,7 @@ x, y, z = "orange", "banana", "cherry"
 x = "Phani"
 
 def my_func():
+  global x
   x = "Srikanth"
   print ("name is " + x)
 my_func()
