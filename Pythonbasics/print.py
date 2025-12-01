@@ -25,10 +25,12 @@ y = "is"
 z = "awesome"
 #print(x, y, z)
 
+
 x = "python"
 y = "is"
 z = "awesome"
 #print( x + y + z)
+
 
 x = 5 
 y = "john"
@@ -36,5 +38,15 @@ y = "john"
 
 x = "Phani"
 
+print("it's alright")
+
+x = 5
+y = "john"
+print(x)
+print(y)
+
+x = 4
+x = "bull"
+print(x)
 
 

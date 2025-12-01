@@ -112,10 +112,10 @@ x = "Phani"
 def my_func():
   global x
   x = "Srikanth"
-  print ("name is " + x)
-my_func()
+  #print ("name is " + x)
+#my_func()
   
-print("name is " + x)
+#print("name is " + x)
 
 
 x = "awesome"
@@ -123,10 +123,42 @@ x = "awesome"
 def myfunc():
   global x
   x = "fantastic"
-  print("Python is " + x)
+  #print("Python is " + x)
 
+#myfunc()
+
+#print("Python is " + x)
+
+#x = "awesome"
+#def myfunc():
+  #print("python is " + x)
+#myfunc()
+
+
+x = "awesome"
+def myfunc():
+  x = "fantastic"
+  print("python is " + x)
 myfunc()
+print("python is " + x)
 
-print("Python is " + x)
+
+def myfunc():
+  global y
+  y = "ankammarao"
+myfunc()
+print("name is " + y)
+
+x = "ankammarao"
+def myfunc():
+  global x
+  x = "sunil"
+  print("name is " + x)
+myfunc()
+print("name is " + x)
+  
+     
+  
+
   
 
