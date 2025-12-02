@@ -164,6 +164,48 @@ list2 = [2, 5, 8, 9,]
 list1.extend(list2)
 print(list1)
 
+x =  ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+y = [1, 2, 3,4]
+x.append(y)
+print(x)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+x.clear()
+print(x)
+
+x =  ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+y = x.copy()
+print(y)
+
+x =  ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+y = x.count("apple")
+print(y)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+y = (1, 3, 5, 7)
+x.extend(y)
+print(x)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+x.insert(2, "mangoo")
+print(x)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+x.pop(2)
+print(x)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+x.remove("orange")
+print(x)
+
+x = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+x.reverse()
+print(x)
+
+X = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
+X.sort()
+print(x)
+
 
 
 

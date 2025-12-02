@@ -5,8 +5,8 @@ z = y + 50
 print(x, y, z)
 
 #arthmetic operataors
-x = 4
-y = 5 
+x = 22
+y = 8
 print(x + y)
 print(x - y)
 print(x * y)
@@ -48,5 +48,8 @@ print("customer" in x)
 x = "hello world"
 print("h" in x)
 
+a = 5
+a //= 6
+print(a)
 
 
