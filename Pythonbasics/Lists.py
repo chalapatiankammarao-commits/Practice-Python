@@ -204,7 +204,7 @@ print(x)
 
 X = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
 X.sort()
-print(x)
+print(X)
 
 
 
