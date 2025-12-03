@@ -13,9 +13,6 @@ car.clear()
 #print(Employee)
 print(car)
 
-
-
-
 x = 41
 
 if x > 10:
@@ -24,4 +21,7 @@ if x > 10:
     print("and also above 20!")
   else:
     print("but not above 20.")
+    
+    
+
     
