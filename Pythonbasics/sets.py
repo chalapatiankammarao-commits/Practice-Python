@@ -148,5 +148,61 @@ print(a)
 a = frozenset({"apple", "banana", "chip"})
 print(a)
 
+a = {"python", "java", "c"}
+a.add("c++")
+print(a)
+
+a = {"python", "java", "c"}
+a.clear()
+print(a)
+
+a = {"python", "java", "c"}
+b = a.copy()
+print(b)
+
+a = {"python", "java", "c"}
+b = {"apple", "java", "complex",}
+c = a.difference(b)
+print(c)
+
+a = {"python", "java", "c"}
+b = {"apple", "java", "complex",}
+a.difference_update(b)
+print(a)
+
+b = {"apple", "java", "complex",}
+b.discard("apple")
+print(b)
+
+b = {"apple", "java", "complex",}
+a = {"python", "java", "c"}
+z = b.intersection(a)
+print(z)
+
+a = {"python", "java", "c"}
+b = {"apple", "java", "complex",}
+a.intersection_update(b)
+print(a)
+
+b = {"apple", "java", "complex",}
+a = {"python", "java", "c"}
+z = b.isdisjoint(a)
+print(z)
+
+a = {"python", "java", "c"}
+b = {"apple", "java", "complex",}
+z = a.issubset(b)
+print(z)
+
+a = {"apple", "java", "complex",}
+b = {"apple", "orange", "java", "jam", "complex"}
+z = b.issuperset(a)
+print(z)
+
+
+
+
+
+
 
 
