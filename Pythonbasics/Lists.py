@@ -203,7 +203,7 @@ x.reverse()
 print(x)
 
 X = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
-X.sort()
+X.clear()
 print(X)
 
 
