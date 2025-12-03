@@ -66,9 +66,87 @@ k = {"appollo", "keerthi", "navodaya", "kakinada"}
 k.clear()
 print(k)
 
+#join sets
+#there are several ways to join the sets in python
+#union(), update(),intersection(),symmetric_difference()
 
+#union
+set1 = {"apple", "sentence", "uploaded"}
+set2 = {"happy", "sad", "mad"}
+set3 = set1.union(set2)
+print(set3)
 
+a = {"apple", "sentence", "uploaded"}
+b = {"happy", "sad", "mad"}
+c = a|b
+print(c)
 
+#update()
+myset = {"apple", "sentence", "uploaded"}
+thisset = {"happy", "sad", "mad"}
+myset.update(thisset)
+print(myset)
+
+#join a set and tuple with union
+
+a = {"mom", "dad", "sister"}
+b = ("brother", "elder brother", "elder sister")
+c = a.union(b)
+print(c)
+
+#intersection ,kepp only duplicates
+a = {"banana", "orange", "cherry", 0, True}
+b = {"apple", "kiwi", "banana", 1, False}
+c = a.intersection(b)
+print(c)
+#using & symbol 
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+c = a & b
+print(c)
+
+#intersection_update
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+a.intersection_update(b)
+print(a)
+
+#difference
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+c = a.difference(b)
+print(c)
+#using (-) symbol
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+c = a - b
+print(c)
+#difference_update method
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+a.difference_update(b)
+print(a)
+
+#symmetric difference
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+c = a.symmetric_difference(b)
+print(c)
+#using ^ symbol 
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+c = a ^ b
+print(c)
+
+#symmetric_difference_update
+a = {"banana", "orange", "cherry"}
+b = {"apple", "kiwi", "banana"}
+a.symmetric_difference_update(b)
+print(a)
+
+#python frozenset
+a = frozenset({"apple", "banana", "chip"})
+print(a)
 
 
 
