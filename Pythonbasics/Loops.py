@@ -110,5 +110,11 @@ for l in c:
 #the pass statement
 for f in [1, 4, 5]:
     pass              
-                
+
+for x in range(6):
+  if x == 3:
+    break
+  print(x)
+else:
+  print("Finally finished!")              
           

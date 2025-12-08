@@ -109,8 +109,87 @@ def otherfun(a, b, /, *, c, d):
 result =  otherfun(5 , 10, c=15, d=20)
 print(result)
 
+# *args and **keyargs
+def my_newfunction(*kids):
+    print("my yongest child is " + kids[2])
+my_newfunction("emil", "tobis", "linus")
+
+#what is *args
+def our_function(*args):
+    print("type of the funtion:", type(args))
+    print("fist arguments:", args[0])
+    print("second arguments:", args[1])
+    print("third arguments:", args[2])
+    print("all arguments:", args)
+our_function("emil", "tobias", "linus")
+
+#using *args and regulararguments
+def inmyfunc(names, *args):
+    for name in args:
+        print(names , name)
+inmyfunc("emil", "apple", "console", "ultra", "content")
+
+#practical example in *args
+def inourfunc(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+print(inourfunc(1, 2, 3))
+print(inourfunc(10, 20, 30, 40,))
+print(inourfunc(5))
+
+def inmyfunc(*dats):
+    if len(dats) == 0:
+      return None
+    max_value = dats[0]
+    for x in dats:
+        if x > max_value:
+         max_value = x
+    return max_value
+print(inmyfunc(3, 7, 2, 9, 1))
+
+#arbitary keywords argumens - *args
+def in_myfunc(**args):
+    print("his lastname is " + args["name"])
+in_myfunc(fame = "fobis" , name = "rao")
+
+def inmy_func(**myvar):
+    print("type:", type(myvar))
+    print("name:", myvar["name"])
+    print("age:", myvar["age"])
+    print("all data:", myvar)
+inmy_func(name = "emil", age = 45, city = "banglore")
+#using **kwargs with regular arguments
+def inour_fun(username, **details):
+    print("username:", username)
+    print("additional details:")
+    for key, value in details.items():
+        print("", key + ":", value)
+inour_fun("emil123", age = 25, city = "oslo", hobby = "coding")
+
+#combine *args and **kwargs
+def inmy_ourfunc(title, *args, **kwargs):
+    print("title:", title)
+    print("positional arguments:", args)
+    print("keyword arguments:", kwargs)
+inmy_ourfunc("user info", "emil", "tobis", age = 25, city = "oslo")
+
+#unpack arguments
+#unpacking lists with *
+def myourfunc(a, b, c):
+    return a + b + c
+numbers = [1, 2, 3]
+result = myourfunc(*numbers)
+print(result)
+
+#unpacking dictionaries with **
+def myinourfunc(fname, lname):
+    print("hello", fname, lname)
+person = {"fname" : "emil", "lname" : "reference"}
+myinourfunc(**person)
+
 
     
-
 
   
