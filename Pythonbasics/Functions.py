@@ -189,7 +189,55 @@ def myinourfunc(fname, lname):
 person = {"fname" : "emil", "lname" : "reference"}
 myinourfunc(**person)
 
+def get_greeting():
+    print("hello from a function")
+get_greeting()
+#create withdraw function
+def withdraw(amount,balance):
+    if amount < balance:
+        return (balance - amount)
+    if amount > balance:
+        return ("error: insufficient funds")
+print(withdraw(200,0))
+#create calculate grade function
+def calculate_grade(marks_list):
+    if not marks_list:
+        return 0, 0, "F"
+    total = sum(marks_list)
+    average = total / len(marks_list)
+    if average >= 90:
+        grade = "A"
+    elif average >= 80:
+        grade = "B"
+    elif average >= 70:
+        grade = "c"
+    elif average >= 60:
+        grade = "D"
+    else:
+        garde = "F"
+    return total, average, grade 
+marks_list = [90, 85, 72,84]
+print(calculate_grade(marks_list))
 
-    
+#create function get status code
+def get_status(code):
+    if code == 200:
+        return "success"
+    elif code == 404:
+        return "not found"
+    elif code == 500:
+        return "server Error"
+    else:
+        return "Unknown Status"
+print(get_status(500))
 
+
+
+
+
+       
+        
+         
+
+        
   
