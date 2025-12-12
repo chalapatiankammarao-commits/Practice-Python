@@ -57,10 +57,32 @@ def inmyfunc(fun):
         return fun(*args, **kwargs).upper()
     return innerfunc
 @inmyfunc
-def inourfunc(name):
-    return "good evening " + name
-def inyoufunc(key):
-    print(inourfunc("aravind"))
-    print(inyoufunc("govind"))
+def inourfunc(key):
+    return "good evening " + key
+@inmyfunc
+def inourfuncc(name):
+    return "hello madav and " + name
+print(inourfunc(key = "govind"))
+print(inourfuncc("aravind"))
+
+#decorator with arguments
+def inmyfunc(n):
+    def inmyfunc(func):
+        def myinne():
+            if n == 1:
+                a = func().lower()
+            else:
+                a = func().upper()
+            return a
+        return myinne
+    return inmyfunc
+@inmyfunc(1)
+def mynewfunc():
+    return "hello louis"
+print(mynewfunc())
+    
+    
+
+
 
     
