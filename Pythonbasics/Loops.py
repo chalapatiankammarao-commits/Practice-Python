@@ -116,5 +116,47 @@ for x in range(6):
     break
   print(x)
 else:
-  print("Finally finished!")              
+  print("Finally finished!")
+  
+balance = 400
+amount = 401
+while balance >= amount:
+    print(balance - amount)
+    break
+else:
+    print("Error: insufficient funds")
+    
+code = 404
+while code == 200:
+    print("success")
+    if code == 404:
+        print("Not found")
+    elif code == 500:
+            print("server error")
+    else:
+        print("Unknown Status")
+        break
+    print(code)
+    
+    
+code = int(input("Enter status code: "))
+
+while True:
+    if code == 200:
+        print("Success")
+        break
+    elif code == 404:
+        print("Not Found")
+        break
+    elif code == 500:
+        print("Server Down")
+        break
+    else:
+        print("Unknown Status")
+        break
+            
+                        
+
+
+          
           
