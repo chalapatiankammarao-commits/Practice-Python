@@ -231,7 +231,25 @@ def get_status(code):
         return "Unknown Status"
 print(get_status(500))
 
+def myfun():
+    print("hello google")
+myfun()
 
+def inmyfunc():
+    return "what is your name"
+print(inmyfunc())
+print(inmyfunc())
+
+
+def inourfunc(fname):
+    return("apple is " + fname)
+print(inourfunc("sweet"))
+print(inourfunc("bad"))
+print(inourfunc("hot"))
+
+def youfunc(name):
+    print("hello " + name)
+youfunc("beautiful")
 
 
 
