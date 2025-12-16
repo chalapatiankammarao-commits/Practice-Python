@@ -206,6 +206,10 @@ X = ["apple", "banana", "orange", "kiwi", "orange", "apple"]
 X.clear()
 print(X)
 
+    
+
+
+
 
 
 
