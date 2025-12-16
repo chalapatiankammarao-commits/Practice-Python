@@ -81,7 +81,14 @@ def mynewfunc():
     return "hello louis"
 print(mynewfunc())
 
-    
+def inyoufunc(func):
+    def myinnerfunc():
+        return func().upper()
+    return myinnerfunc
+@inyoufunc
+def yourfunc():
+    return "hello baby"
+print(yourfunc())    
     
 
 
