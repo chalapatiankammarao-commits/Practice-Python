@@ -251,11 +251,37 @@ def youfunc(name):
     print("hello " + name)
 youfunc("beautiful")
 
+def withdrawfunc(amount,balance):
+    if amount <= balance:
+        return(balance - amount)
+    else:
+        return("insufficient funds")
+print(withdrawfunc(500,400))
+
+def calculate_grade(marks_list):
+    if not marks_list:
+        return 0, 0, 0, "F"
+    total = sum(marks_list)
+    average = total/len(marks_list)
+    if average >= 90:
+        grade = "A"
+    elif average >= 80:
+        grade = "B"
+    elif average >= 70:
+        grade = "C"
+    elif average >= 60:
+        grade = "D"
+    else:
+        grade = "F"
+    return total, average, grade
+marks_list = [72, 86, 64, 89]
+print(calculate_grade(marks_list))
 
 
-       
-        
-         
+    
+
+
+
 
         
   

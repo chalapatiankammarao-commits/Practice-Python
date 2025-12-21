@@ -126,21 +126,20 @@ while balance >= amount:
 else:
     print("Error: insufficient funds")
     
-code = 404
+code = int(input("enter the code"))
 while code == 200:
     print("success")
     if code == 404:
         print("Not found")
     elif code == 500:
-            print("server error")
+        print("server error")
     else:
         print("Unknown Status")
         break
     print(code)
     
     
-code = int(input("Enter status code: "))
-
+code = int(input("enter status code"))
 while True:
     if code == 200:
         print("Success")
